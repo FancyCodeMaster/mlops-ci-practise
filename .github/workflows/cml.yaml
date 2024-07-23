@@ -20,5 +20,11 @@ jobs:
           # Your ML workflow goes here
           pip install -r requirements.txt
           python model.py
+
+          echo "## MODEL metrics" > report.md
+          cat metrics.txt >> report.md
+
+          cml-send-comment report.md
+          
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
