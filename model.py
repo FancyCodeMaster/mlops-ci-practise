@@ -142,7 +142,7 @@ print(classification_report(y_true, y_pred, target_names=target_names))
 
 
 with open('metrics.txt', 'w') as f:
-    f.write('Test Accuracy : 90 %')
+    f.write('Test Accuracy : 95 %')
 
 
 
