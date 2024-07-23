@@ -141,7 +141,7 @@ target_names = ['class 0', 'class 1', 'class 2']
 print(classification_report(y_true, y_pred, target_names=target_names))
 
 
-with open('random-test-metrics.txt', 'w') as f:
+with open('metrics.txt', 'w') as f:
     f.write(classification_report(y_true, y_pred, target_names=target_names))
 
 
