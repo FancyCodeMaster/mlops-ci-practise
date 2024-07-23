@@ -134,6 +134,13 @@ regressor = RandomForestRegressor(n_estimators = 100)
 regressor.fit(X_train , y_train)
 y_pred = regressor.predict(X_test)
 
+from sklearn.metrics import classification_report
+print(classification_report(y_test, y_pred, target_names=train.columns[0:-1]))
+
+
+
+
+
 
 
 
